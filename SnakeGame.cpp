@@ -163,6 +163,14 @@ void Logic()
 
 int main()
 {
+    Setup();
+    while (!gameOver)
+    {
+        Draw();
+        Input();
+        Logic();
+        Sleep(40);
+    }
 
     return 0;
 }
